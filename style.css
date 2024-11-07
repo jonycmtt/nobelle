@@ -3,6 +3,7 @@
   justify-content: space-between;
   gap: 10px;
   margin: 20px 0;
+  overflow: hidden;
 }
 
 .background-image {
@@ -15,4 +16,5 @@
   width: 82%;
   height: 60vh;
   object-fit: cover;
+  transform: scaleX(1.3);
 }
