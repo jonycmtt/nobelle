@@ -10,8 +10,121 @@
       href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <nav
+      class="flex items-center relative justify-between px-5 py-4 bg-white shadow-md"
+    >
+      <!-- Hamburger Icon -->
+      <div class="flex items-center space-x-4">
+        <i
+          class="bx bx-menu text-3xl text-gray-700 md:hidden cursor-pointer"
+          onclick="toggleMenu()"
+        ></i>
+      </div>
+
+      <!-- Mobile Navigation Links -->
+      <div id="mobileMenu" class="hidden asbolute top-0 left-0 md:hidden">
+        <ul class="flex flex-col space-y-2 mt-2">
+          <li>
+            <a href="#" class="hover:text-gray-500">Transportation</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-gray-500">Security</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-gray-500">Travel Management</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-gray-500">Unlimited</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Centered Navigation Links for Desktop -->
+      <div class="hidden md:flex w-full justify-center">
+        <ul
+          class="flex items-center space-x-8 text-gray-700 uppercase text-sm font-medium"
+        >
+          <li>
+            <a href="#" class="hover:text-gray-500">Transportation</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-gray-500">Security</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-gray-500 font-bold text-2xl"
+              >Nobelle</a
+            >
+          </li>
+          <li>
+            <a href="#" class="hover:text-gray-500">Travel Management</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-gray-500">Unlimited</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- hero section  -->
+    <div
+      class="relative bg-cover bg-center w-full h-[100vh] justify-center text-center"
+      style="
+        background-image: url('./images/223f48def39d22f50e18b3c72c292a29.jpeg');
+      "
+    >
+      <!-- Overlay for better text readability -->
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+
+      <div
+        class="relative z-10 text-left text-white p-6 md:pt-72 md:pb-20 pt-42 pb-10"
+      >
+        <h2 class="md:text-8xl text-5xl italic font-semibold mb-4">
+          Exclusively Yours, <br />
+          Seamlessly Arranged
+        </h2>
+        <p class="text-lg">
+          Nobelle delivers luxury services that elevate your lifestyle, from
+          <br />
+          personalized travel arrangements to exclusive experiences. Whether
+          it’s
+          <br />
+          a one-time request or ongoing access, we ensure everything is tailored
+          <br />
+          to your preferences with effortless care.
+        </p>
+      </div>
+    </div>
+
+    <div class="amination-main ">
+      <div
+        class="background-image  min-h-[80vh] bg-center bg-cover"
+        style="background-image: url('0ea077954b6fec9622cd6923f2dfee42.jpeg')"
+      ></div>
+      <div
+        class="background-image min-h-[80vh] bg-center bg-cover"
+        style="background-image: url('20ba5d4da090729f9be7f86d6bbe5841.png')"
+      ></div>
+    </div>
+
+    <!-- <div class="my-5 flex duration-1000 w-full overflow-hidden gap-3">
+      <div
+        class="relative bg-cover bg-center w-11/12 hover:w-[60vw] fixed h-[80vh] transition-all duration-300 ease-in-out transform z-20 cursor-pointer"
+        style="background-image: url('0ea077954b6fec9622cd6923f2dfee42.jpeg')"
+      >
+        <div></div>
+      </div>
+      <div
+        class="relative bg-cover bg-center w-11/12 hover:w-[60vw] fixed h-[80vh] transition-all duration-300 ease-in-out transform z-20 cursor-pointer"
+        style="background-image: url('20ba5d4da090729f9be7f86d6bbe5841.png')"
+      >
+        <div></div>
+      </div>
+    </div> -->
+
     <script>
       function toggleMenu() {
         const menu = document.getElementById("mobileMenu");
@@ -19,105 +132,4 @@
       }
     </script>
   </body>
-
-  <nav
-    class="flex items-center relative justify-between px-5 py-4 bg-white shadow-md"
-  >
-    <!-- Hamburger Icon -->
-    <div class="flex items-center space-x-4">
-      <i
-        class="bx bx-menu text-3xl text-gray-700 md:hidden cursor-pointer"
-        onclick="toggleMenu()"
-      ></i>
-    </div>
-
-    <!-- Mobile Navigation Links -->
-    <div id="mobileMenu" class="hidden asbolute top-0 left-0 md:hidden">
-      <ul class="flex flex-col space-y-2 mt-2">
-        <li>
-          <a href="#" class="hover:text-gray-500">Transportation</a>
-        </li>
-        <li>
-          <a href="#" class="hover:text-gray-500">Security</a>
-        </li>
-        <li>
-          <a href="#" class="hover:text-gray-500">Travel Management</a>
-        </li>
-        <li>
-          <a href="#" class="hover:text-gray-500">Unlimited</a>
-        </li>
-      </ul>
-    </div>
-
-    <!-- Centered Navigation Links for Desktop -->
-    <div class="hidden md:flex w-full justify-center">
-      <ul
-        class="flex items-center space-x-8 text-gray-700 uppercase text-sm font-medium"
-      >
-        <li>
-          <a href="#" class="hover:text-gray-500">Transportation</a>
-        </li>
-        <li>
-          <a href="#" class="hover:text-gray-500">Security</a>
-        </li>
-        <li>
-          <a href="#" class="hover:text-gray-500 font-bold text-2xl">Nobelle</a>
-        </li>
-        <li>
-          <a href="#" class="hover:text-gray-500">Travel Management</a>
-        </li>
-        <li>
-          <a href="#" class="hover:text-gray-500">Unlimited</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- hero section  -->
-  <div
-    class="relative bg-cover bg-center w-full h-[100vh] justify-center text-center"
-    style="
-      background-image: url('./images/223f48def39d22f50e18b3c72c292a29.jpeg');
-    "
-  >
-    <!-- Overlay for better text readability -->
-    <div class="absolute inset-0 bg-black opacity-50"></div>
-
-    <div
-      class="relative z-10 text-left text-white p-6 md:pt-72 md:pb-20 pt-42 pb-10"
-    >
-      <h2 class="md:text-8xl text-5xl italic font-semibold mb-4">
-        Exclusively Yours, <br />
-        Seamlessly Arranged
-      </h2>
-      <p class="text-lg">
-        Nobelle delivers luxury services that elevate your lifestyle, from
-        <br />
-        personalized travel arrangements to exclusive experiences. Whether it’s
-        <br />
-        a one-time request or ongoing access, we ensure everything is tailored
-        <br />
-        to your preferences with effortless care.
-      </p>
-    </div>
-  </div>
-
-  <div class="my-5 flex duration-1000 w-full overflow-hidden gap-3">
-    <div
-      class="relative bg-cover bg-center w-11/12 hover:w-[60vw] fixed h-[80vh] transition-all duration-300 ease-in-out transform z-20 cursor-pointer"
-      style="
-        background-image: url('0ea077954b6fec9622cd6923f2dfee42.jpeg');
-      "
-    >
-      <div></div>
-    </div>
-    <div
-      class="relative bg-cover bg-center w-11/12 hover:w-[60vw] fixed h-[80vh] transition-all duration-300 ease-in-out transform z-20 cursor-pointer"
-      style="
-        background-image: url('20ba5d4da090729f9be7f86d6bbe5841.png');
-      "
-    >
-      <div></div>
-    </div>
-  </div>
 </html>
