@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+        </script>
+</body>
+<nav class="flex items-center relative justify-between px-5 py-4 bg-white shadow-md">
+  <!-- Hamburger Icon -->
+  <div class="flex items-center space-x-4">
+    <i class="bx bx-menu text-3xl text-gray-700 md:hidden cursor-pointer" onclick="toggleMenu()"></i>
+  </div>
+  
+  <!-- Mobile Navigation Links -->
+  <div id="mobileMenu" class="hidden asbolute top-0 left-0 md:hidden">
+    <ul class="flex flex-col space-y-2 mt-2">
+      <li>
+        <a href="#" class="hover:text-gray-500">Transportation</a>
+      </li>
+      <li>
+        <a href="#" class="hover:text-gray-500">Security</a>
+      </li>
+      <li>
+        <a href="#" class="hover:text-gray-500">Travel Management</a>
+      </li>
+      <li>
+        <a href="#" class="hover:text-gray-500">Unlimited</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Centered Navigation Links for Desktop -->
+  <div class="hidden md:flex w-full justify-center">
+    <ul class="flex items-center space-x-8 text-gray-700 uppercase text-sm font-medium">
+      <li>
+        <a href="#" class="hover:text-gray-500">Transportation</a>
+      </li>
+      <li>
+        <a href="#" class="hover:text-gray-500">Security</a>
+      </li>
+      <li>
+        <a href="#" class="hover:text-gray-500 font-bold text-2xl">Nobelle</a>
+      </li>
+      <li>
+        <a href="#" class="hover:text-gray-500">Travel Management</a>
+      </li>
+      <li>
+        <a href="#" class="hover:text-gray-500">Unlimited</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</html>
